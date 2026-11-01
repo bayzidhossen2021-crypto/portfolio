@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Bayzid Hossen | Personal Portfolio</title>
+    <!-- Google Fonts: Inter & Hind Siliguri -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- 1. Header & Navigation Bar -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">
+                <span class="logo__symbol">&lt;/&gt;</span> Bayzid
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="fa-solid fa-house"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="fa-solid fa-user"></i> About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="fa-solid fa-code"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <i class="fa-solid fa-laptop-code"></i> Projects
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="fa-solid fa-paper-plane"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Close Button for Mobile Menu -->
+                <div class="nav__close" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <div class="nav__buttons">
+                <!-- Dark/Light Theme Toggle Button -->
+                <button class="theme-toggle-btn" id="theme-button" title="Toggle Theme" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-sun" id="theme-icon"></i>
+                </button>
+
+                <!-- Mobile Menu Hamburger Button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- 2. Hero Section -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <div class="home__badge">
+                        <span class="badge__dot"></span> Welcome to my portfolio
+                    </div>
+                    <h1 class="home__title">
+                        Hello, I'm <span class="highlight-text">Md. Bayzid Hossen</span>
+                    </h1>
+                    <h2 class="home__subtitle">
+                        I am a <span class="typing-text" id="typing-text">Web Developer</span>
+                    </h2>
+                    <p class="home__description">
+                        I am a curious and ambitious person who loves learning new things and exploring new technologies. I believe in working hard, improving myself, and turning my dreams into reality. My goal is to build a successful future through dedication, creativity, and continuous learning.
+                    </p>
+
+                    <div class="home__buttons">
+                        <a href="#contact" class="btn btn--primary">
+                            <i class="fa-solid fa-envelope"></i> Contact Me
+                        </a>
+                        <a href="#projects" class="btn btn--outline">
+                            <i class="fa-solid fa-eye"></i> View Projects
+                        </a>
+                    </div>
+
+                    <div class="home__social">
+                        <span class="home__social-text">Connect with me:</span>
+                        <div class="home__social-links">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="home__social-icon" title="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="home__social-icon" title="LinkedIn">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="home__social-icon" title="Twitter / X">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="mailto:bayzidhossen2021@gmail.com" class="home__social-icon" title="Email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home__visual">
+                    <div class="avatar-card">
+                        <div class="avatar-card__inner">
+                            <div class="avatar-img-box">
+                                <img src="profile.jpg" alt="Md. Bayzid Hossen" class="avatar-img" onerror="this.style.display='none'; document.getElementById('fallback-icon').style.display='flex';">
+                                <div class="avatar-icon" id="fallback-icon" style="display: none;">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                </div>
+                            </div>
+                            <h3 class="avatar-name">Md. Bayzid Hossen</h3>
+                            <span class="avatar-role">Robotics &amp; Web Dev</span>
+                            <div class="avatar-floating-badge badge-1">
+                                <i class="fa-solid fa-bolt"></i>
+                                <span>Fast &amp; Responsive</span>
+                            </div>
+                            <div class="avatar-floating-badge badge-2">
+                                <i class="fa-solid fa-microchip"></i>
+                                <span>Hardware &amp; Web Logic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. About Me Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">My Story</span>
+                    <h2 class="section__title">About Me</h2>
+                    <div class="section__line"></div>
+                </div>
+
+                <div class="about__container grid">
+                    <div class="about__img-wrapper">
+                        <div class="about__card">
+                            <i class="fa-solid fa-laptop-code about__big-icon"></i>
+                            <h3>Creative Web Developer</h3>
+                            <p>I strive to continuously improve myself through my passion for technology, eagerness to learn new things, and creativity.</p>
+                        </div>
+                    </div>
+
+                    <div class="about__data">
+                        <p class="about__description">
+                            I am a passionate and ambitious individual who believes in continuous learning and self-improvement. My academic journey has helped me develop knowledge, skills, and creativity. I am interested in technology, innovation, and exploring new opportunities. My goal is to build a successful future through hard work, dedication, and lifelong learning.
+                        </p>
+                        <p class="about__description">
+                            I believe in thinking beyond boundaries, embracing new challenges, and discovering a better version of myself every day.
+                        </p>
+
+                        <div class="about__info grid">
+                            <div class="about__info-box">
+                                <span class="about__info-title">1+</span>
+                                <span class="about__info-name">Year of Learning</span>
+                            </div>
+                            <div class="about__info-box">
+                                <span class="about__info-title">3+</span>
+                                <span class="about__info-name">Featured Projects</span>
+                            </div>
+                            <div class="about__info-box">
+                                <span class="about__info-title">100%</span>
+                                <span class="about__info-name">Passion & Dedication</span>
+                            </div>
+                        </div>
+
+                        <div class="about__buttons">
+                            <a href="#contact" class="btn btn--primary">
+                                <i class="fa-solid fa-handshake"></i> Let's Talk
+                            </a>
+                            <a href="#" class="btn btn--secondary" onclick="alert('You can link your downloadable CV or resume file here!'); return false;">
+                                <i class="fa-solid fa-file-arrow-down"></i> Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. My Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">My Expertise</span>
+                    <h2 class="section__title">Skills & Technologies</h2>
+                    <div class="section__line"></div>
+                </div>
+
+                <div class="skills__container grid">
+                    <!-- Skill Card 1: Core Programming & Web -->
+                    <div class="skill__card">
+                        <div class="skill__card-header">
+                            <div class="skill__icon-box">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h3 class="skill__card-title">Core Development</h3>
+                        </div>
+                        <ul class="skill__list">
+                            <li class="skill__item">
+                                <div class="skill__info">
+                                    <span class="skill__name"><i class="fa-brands fa-js"></i> JavaScript</span>
+                                    <span class="skill__percentage">70%</span>
+                                </div>
+                                <div class="skill__bar"><div class="skill__progress" style="width: 70%;"></div></div>
+                            </li>
+                            <li class="skill__item">
+                                <div class="skill__info">
+                                    <span class="skill__name"><i class="fa-solid fa-c"></i> C / C++</span>
+                                    <span class="skill__percentage">90%</span>
+                                </div>
+                                <div class="skill__bar"><div class="skill__progress" style="width: 90%;"></div></div>
+                            </li>
+                            <li class="skill__item">
+                                <div class="skill__info">
+                                    <span class="skill__name"><i class="fa-solid fa-microchip"></i> PLC Programming</span>
+                                    <span class="skill__percentage">85%</span>
+                                </div>
+                                <div class="skill__bar"><div class="skill__progress" style="width: 85%;"></div></div>
+                            </li>
+                            <li class="skill__item">
+                                <div class="skill__info">
+                                    <span class="skill__name"><i class="fa-solid fa-palette"></i> Web Design</span>
+                                    <span class="skill__percentage">90%</span>
+                                </div>
+                                <div class="skill__bar"><div class="skill__progress" style="width: 90%;"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Skill Card 2: Tools & Hardware/Software -->
+                    <div class="skill__card">
+                        <div class="skill__card-header">
+                            <div class="skill__icon-box">
+                                <i class="fa-solid fa-toolbox"></i>
+                            </div>
+                            <h3 class="skill__card-title">Tools & Tech Stack</h3>
+                        </div>
+                        <div class="skill__tags">
+                            <span class="skill__tag"><i class="fa-brands fa-git-alt"></i> Git</span>
+                            <span class="skill__tag"><i class="fa-brands fa-github"></i> GitHub</span>
+                            <span class="skill__tag"><i class="fa-solid fa-code"></i> VS Code</span>
+                            <span class="skill__tag"><i class="fa-solid fa-terminal"></i> PEN Code</span>
+                            <span class="skill__tag"><i class="fa-brands fa-figma"></i> Figma</span>
+                            <span class="skill__tag"><i class="fa-brands fa-chrome"></i> DevTools</span>
+                            <span class="skill__tag"><i class="fa-solid fa-microchip"></i> ESP32</span>
+                        </div>
+                        <p class="skill__card-note">
+                            Skilled with modern developer environments, version control, and embedded microcontrollers.
+                        </p>
+                    </div>
+
+                    <!-- Skill Card 3: Professional Soft Skills -->
+                    <div class="skill__card">
+                        <div class="skill__card-header">
+                            <div class="skill__icon-box">
+                                <i class="fa-solid fa-lightbulb"></i>
+                            </div>
+                            <h3 class="skill__card-title">Professional Qualities</h3>
+                        </div>
+                        <div class="soft-skills__list">
+                            <div class="soft-skill__item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>Problem Solving:</strong> Analytical mindset for troubleshooting hardware and web systems.
+                                </div>
+                            </div>
+                            <div class="soft-skill__item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>Communication:</strong> Clear, proactive, and collaborative discussions.
+                                </div>
+                            </div>
+                            <div class="soft-skill__item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>Fast Learner:</strong> Rapidly mastering new programming paradigms and frameworks.
+                                </div>
+                            </div>
+                            <div class="soft-skill__item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>Time Management:</strong> Delivering reliable, high-quality results on schedule.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. My Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">My Portfolio</span>
+                    <h2 class="section__title">Featured Projects</h2>
+                    <div class="section__line"></div>
+                </div>
+
+                <div class="projects__container grid">
+                    <!-- Project 1: Compliments -->
+                    <div class="project__card project__card--compliments">
+                        <div class="project__img-placeholder project-gradient-compliments">
+                            <i class="fa-solid fa-wand-magic-sparkles project__banner-icon"></i>
+                            <span class="project__type-badge">Web Application</span>
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">Compliments</h3>
+                            <p class="project__description">
+                                A delightful web application designed to spread joy and appreciation. Users enter their name, click next, and receive personalized, uplifting compliments.
+                            </p>
+                            <div class="project__tech-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="#" class="project__link" onclick="alert('This is a demo link. You can link your live Compliments website here!'); return false;">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project__link">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: ARES-01 -->
+                    <div class="project__card project__card--ares">
+                        <div class="project__img-placeholder project-gradient-ares">
+                            <i class="fa-solid fa-robot project__banner-icon"></i>
+                            <span class="project__type-badge">Robotics &amp; PLC</span>
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">ARES-01</h3>
+                            <p class="project__description">
+                                An intelligent autonomous rover built to relocate physical objects. Powered by camera object detection, robotic arm kinematics, and integrated web control.
+                            </p>
+                            <div class="project__tech-tags">
+                                <span>ESP32 CAM</span>
+                                <span>Robotics Arm</span>
+                                <span>Controller API</span>
+                                <span>PLC Logic</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="#" class="project__link" onclick="alert('Demo link for ARES-01 project!'); return false;">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project__link">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Personal Portfolio Website -->
+                    <div class="project__card project__card--portfolio">
+                        <div class="project__img-placeholder project-gradient-portfolio">
+                            <i class="fa-solid fa-laptop-code project__banner-icon"></i>
+                            <span class="project__type-badge">Personal Website</span>
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">Personal Portfolio Website</h3>
+                            <p class="project__description">
+                                A modern, fully responsive personal portfolio website engineered from scratch featuring dark/light themes, smooth animations, and interactive forms.
+                            </p>
+                            <div class="project__tech-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Responsive UI</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="#home" class="project__link">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live View
+                                </a>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project__link">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Get In Touch</span>
+                    <h2 class="section__title">Contact Me</h2>
+                    <div class="section__line"></div>
+                </div>
+
+                <div class="contact__container grid">
+                    <!-- Contact Information -->
+                    <div class="contact__info">
+                        <h3 class="contact__info-heading">Let's build something great!</h3>
+                        <p class="contact__info-desc">
+                            Have an exciting project in mind, a question about robotics and web development, or just want to say hi? Send me a message!
+                        </p>
+
+                        <div class="contact__cards">
+                            <div class="contact__card">
+                                <div class="contact__card-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="contact__card-data">
+                                    <span class="contact__card-title">Email</span>
+                                    <a href="mailto:bayzidhossen2021@gmail.com" class="contact__card-value">bayzidhossen2021@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact__card">
+                                <div class="contact__card-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="contact__card-data">
+                                    <span class="contact__card-title">Phone / WhatsApp</span>
+                                    <span class="contact__card-value">+8801841151656</span>
+                                </div>
+                            </div>
+
+                            <div class="contact__card">
+                                <div class="contact__card-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="contact__card-data">
+                                    <span class="contact__card-title">Location</span>
+                                    <span class="contact__card-value">Bakerganj, Barishal, Bangladesh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Message Form -->
+                    <div class="contact__form-wrapper">
+                        <form class="contact__form" id="contact-form">
+                            <div class="form__group">
+                                <label for="name" class="form__label">Your Name</label>
+                                <input type="text" id="name" class="form__input" placeholder="e.g. John Doe" required>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="email" class="form__label">Your Email</label>
+                                <input type="email" id="email" class="form__input" placeholder="name@example.com" required>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="subject" class="form__label">Subject</label>
+                                <input type="text" id="subject" class="form__input" placeholder="Project Inquiry / Feedback" required>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="message" class="form__label">Message</label>
+                                <textarea id="message" rows="5" class="form__input form__textarea" placeholder="Tell me about your project or message..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary btn--block">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+
+                            <!-- Feedback Message -->
+                            <div class="form__message" id="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 7. Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <a href="#home" class="footer__logo">
+                    <span class="logo__symbol">&lt;/&gt;</span> Md. Bayzid Hossen
+                </a>
+                <p class="footer__description">
+                    Developing modern web applications and embedded hardware solutions with passion, dedication, and precision.
+                </p>
+                <div class="footer__socials">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="mailto:bayzidhossen2021@gmail.com" class="footer__social-link" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    &copy; 2026 Md. Bayzid Hossen. All rights reserved. Crafted with care.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Up Button -->
+    <a href="#home" class="scrollup" id="scroll-up" title="Scroll to Top" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
